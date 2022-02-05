@@ -20,3 +20,8 @@ Words per sentence: ${results.wordCountsPerSentence.join(', ')}<br>
 <br>
 Sentences per paragraph: ${results.sentenceCountsPerParagraph.join(', ')}`
 }
+
+document.getElementById('cleartext').onclick = () => {
+    document.getElementById('result').innerHTML = ''
+    document.getElementById('text').value = ''
+}
